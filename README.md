@@ -19,6 +19,11 @@ The dataset contains 7 classes of plant species:
 - Strawberry
 - Tomato
 
+*(Note: The dataset is too large to be hosted directly on GitHub.)*
+📥 **[Download the Dataset Here](https://drive.google.com/drive/folders/16-q99aO5PKMQJydK718q8bY3nXJE83bl)** 
+
+Once downloaded, extract the dataset into the project's root directory. It should contain 7 subfolders corresponding to the species listed above.
+
 ## Requirements
 
 Install the required packages:
@@ -29,9 +34,7 @@ pip install -r requirements.txt
 ## Pre-trained Models
 
 Since model weights (`.pth` files) are too large for GitHub, you can download the trained models here and place them in the root directory:
-- [Download ResNet50 Weights](#) <!-- TODO: Update link here -->
-- [Download VGG16 Weights](#) <!-- TODO: Update link here -->
-- [Download AlexNet Weights](#) <!-- TODO: Update link here -->
+- **[Download the weights from here](https://drive.google.com/drive/folders/1Msi3xVu317PIA5wwumwLfFtb1hdG-XkW?usp=sharing)**
 
 ## Usage
 
@@ -79,8 +82,8 @@ python run_model.py
 By benchmarking these models, we can analyze the tradeoff between deep model complexity (ResNet50) and lightweight inference speed (AlexNet). The training pipeline automatically generates comparative visualizations to evaluate precision, recall, and convergence.
 
 *(Pro Tip: To make your README really stand out, you can display your generated graphs right here by uncommenting these lines!)*
-<!-- ![ResNet50 Learning Curve](ResNet50_learning_curves.png) -->
-<!-- ![ResNet50 Confusion Matrix](ResNet50_confusion_matrix.png) -->
+![ResNet50 Learning Curve](ResNet50_learning_curves.png)
+![ResNet50 Confusion Matrix](ResNet50_confusion_matrix.png)
 
 ## Output Files Generated During Training
 
