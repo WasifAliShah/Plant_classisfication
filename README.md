@@ -1,11 +1,11 @@
 # Plant Species Classification using Transfer Learning
 
-This project implements transfer learning on three state-of-the-art Convolutional Neural Network (CNN) architectures (AlexNet, VGG16, and ResNet50) to classify 7 different plant species from leaf images. 
+This project implements transfer learning in **PyTorch** using three widely used Convolutional Neural Network (CNN) architectures (AlexNet, VGG16, and ResNet50) to classify 7 plant species from leaf images. 
 
 ## 🌟 Project Highlights
 - **Comparative Benchmarking**: Direct performance comparison across three distinct CNN architectures of varying depth and complexity.
-- **Robust Transfer Learning**: Utilizes pre-trained ImageNet weights, selectively fine-tuning classification heads while utilizing deep feature-extraction layers to dramatically reduce training time and prevent overfitting.
-- **Dynamic Data Augmentation**: Implements real-time PyTorch transformations (rotations, flips, color jitter) to make the models resilient to real-world lighting, scaling, and orientation variances.
+- **Robust Transfer Learning**: Utilizes ImageNet-pretrained CNN backbones by freezing feature extraction layers and replacing the final classification head for plant species classification, reducing training time while improving generalization.
+- **Dynamic Data Augmentation**: Implements real-time PyTorch transformations (rotations, flips, color jitter) to improve model generalization to variations in lighting, orientation, and appearance.
 - **Automated Evaluation Pipeline**: Automatically generates side-by-side Learning Curves (Loss/Accuracy) and Confusion Matrices for deep analytical insights.
 
 ## Dataset
@@ -79,9 +79,18 @@ python run_model.py
 
 ## 📊 Results & Comparative Analysis
 
-By benchmarking these models, we can analyze the tradeoff between deep model complexity (ResNet50) and lightweight inference speed (AlexNet). The training pipeline automatically generates comparative visualizations to evaluate precision, recall, and convergence.
+## 📊 Results & Comparative Analysis
 
+The project benchmarks **AlexNet**, **VGG16**, and **ResNet50** under identical training settings to compare their classification performance, convergence behavior, and model complexity.
+
+Among the evaluated architectures, **ResNet50 demonstrated the strongest overall performance**, producing the most consistent learning curves and the highest classification performance on the validation dataset. The deeper residual architecture enabled better feature representation while maintaining stable convergence through transfer learning.
+
+The training pipeline automatically generates learning curves, confusion matrices, and classification reports for each model, providing a comprehensive comparison of their performance.
+
+### ResNet50 Learning Curve
 ![ResNet50 Learning Curve](ResNet50_learning_curves.png)
+
+### ResNet50 Confusion Matrix
 ![ResNet50 Confusion Matrix](ResNet50_confusion_matrix.png)
 
 ## Output Files Generated During Training
