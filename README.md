@@ -81,7 +81,6 @@ python run_model.py
 
 By benchmarking these models, we can analyze the tradeoff between deep model complexity (ResNet50) and lightweight inference speed (AlexNet). The training pipeline automatically generates comparative visualizations to evaluate precision, recall, and convergence.
 
-*(Pro Tip: To make your README really stand out, you can display your generated graphs right here by uncommenting these lines!)*
 ![ResNet50 Learning Curve](ResNet50_learning_curves.png)
 ![ResNet50 Confusion Matrix](ResNet50_confusion_matrix.png)
 
