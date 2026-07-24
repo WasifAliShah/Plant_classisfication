@@ -1,6 +1,6 @@
 # Plant Species Classification using Transfer Learning
 
-This project implements transfer learning on three state-of-the-art Convolutional Neural Network (CNN) architectures (AlexNet, VGG16, and ResNet50) to classify 7 different plant species and detect diseases from leaf images. 
+This project implements transfer learning on three state-of-the-art Convolutional Neural Network (CNN) architectures (AlexNet, VGG16, and ResNet50) to classify 7 different plant species from leaf images. 
 
 ## 🌟 Project Highlights
 - **Comparative Benchmarking**: Direct performance comparison across three distinct CNN architectures of varying depth and complexity.
