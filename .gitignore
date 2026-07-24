@@ -1,0 +1,24 @@
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Data and large files
+*.pth
+*.xlsx
+
+# Media (Graphs like .png are NOT ignored so they can be uploaded)
+*.jpg
+*.webp
+*.webm
+*.jpeg
+
+# Specific scripts to ignore (older training files)
+AlexNet.py
+VGGNet.py
+ResNet.py
+resnet.py
+plant_classification_transfer_learning.py
+plant_classification_transfer_learning2.py
